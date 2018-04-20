@@ -17,8 +17,17 @@ export default class Team5 extends Component {
   }
 
   render() {
-    return (<div>
-      {this.props.CEOName}
-    </div>)
+    return (
+      <div style={{ backgroundColor: 'blue', color: 'purple', height: '100%', padding: 20 }}>
+        <form action="https://facebook.com">
+          <h1>Contact us</h1>
+
+          <p><label>Name</label><br /><input type="text" /></p>
+          <p><label>Social security number</label><br/><input type="text" required /></p>
+
+          <button type="submit">Send!</button>
+        </form>
+      </div>
+    );
   }
 }
