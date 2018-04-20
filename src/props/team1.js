@@ -21,6 +21,9 @@ const fishes = [
   'Lionfish',
   'Noodlefish',
   'Minnow of the deep',
+  'Kanyu',
+  'Halibut',
+  'Guppy',
   'Warmouth'
 ]
 const fish = fishes[Math.floor(Math.random() * fishes.length)]
