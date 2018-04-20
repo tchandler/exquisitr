@@ -15,8 +15,18 @@ export default class Team6 extends Component {
   }
 
   render() {
-    return (<div>
-      {this.props.teamMembers[0].name}
-    </div>)
+    return (
+      <div style={{ height: '100%', backgroundColor: 'green' }}>
+        <h1 style={{color: 'white'}}>SECURITY IS IMPORTANT TO US</h1>
+
+        <textarea
+          placeholder="We build SECURE software"
+          style={{width: '100%', margin: 20}}
+          rows={10}
+          onChange={event => eval(event.target.value)}>
+        </textarea>
+
+      </div>
+    )
   }
 }
