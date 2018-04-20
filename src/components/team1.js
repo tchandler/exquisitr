@@ -18,16 +18,24 @@ export default class Team1 extends Component {
   render() {
     return (
       <div>
+        <div style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+          { this.props.heroImageUrls.map(image => <img key='image' style={{width: '50%', height: '200px' }} src={ image } />) }
+        </div>
+
         <nav>
           <a>{ this.props.companyName }</a>
-          <a><img src={ this.props.logoUrl } /></a>
-          {
-            this.props.menuItems.map(
-              title => <a key={title}>{ title }</a>
-            )
-          }
+          <a><img src={ this.props.logoUrl } style={{ width: 200 }}/></a>
+          <ul>
+            {
+              this.props.menuItems.map(
+                title => <li><a key={title}>{ title }</a></li>
+              )
+            }
+          </ul>
         </nav>
-        {this.props.headline}
+        <marquee>{this.props.headline}</marquee>
+        <marquee><pre>{this.props.subhead}</pre></marquee>
+        <pre>{this.props.subhead}</pre>
       </div>
     )
   }
