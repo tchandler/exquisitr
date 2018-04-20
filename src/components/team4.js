@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import './team4.css';
 
 export default class Team4 extends Component {
   static propTypes = {
@@ -13,8 +14,16 @@ export default class Team4 extends Component {
   }
 
   render() {
-    return (<div>
-      {this.props.serviceName}
-    </div>)
+    return (
+      <div className='team4'>
+        <blockquote>
+          <p>
+            Clop, clop, clop like you just can't stop.<br/><br/>
+            When I say hip... you say... <br /><br />
+            <cite>-- Richard Nixon ✌️</cite>
+          </p>
+        </blockquote>
+      </div>
+    );
   }
 }
