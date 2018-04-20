@@ -1,0 +1,41 @@
+footer > div {
+  display: flex;
+}
+
+footer > div > div {
+  flex: 1;
+}
+
+.contact-img {
+  -webkit-animation: rotation2 8s infinite linear;
+  perspective: 1000;
+}
+
+@-webkit-keyframes rotation1 {
+  from {
+          -webkit-transform: rotatey(0deg);
+  }
+  to {
+          -webkit-transform: rotatey(359deg);
+  }
+}
+
+@-webkit-keyframes rotation2 {
+  33% { transform: rotateZ(359deg) rotateY(359deg) rotateX(359deg); }
+  66% { transform: rotateZ(-359deg) rotateY(359deg) rotateX(359deg); }
+  100% { transform: rotateZ(359deg) rotateY(-359deg) rotateX(-359deg); }
+}
+
+footer .copyright img {
+  max-width: 100%;
+}
+
+footer .contact img {
+  max-width: 100%;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
