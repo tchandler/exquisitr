@@ -45,6 +45,12 @@ export default class Team1 extends Component {
         color2: this.state.color1.shiftHue(1)
       })
     }, 60)
+
+    this.colorTimer = window.setInterval(() => {
+      this.setState({
+        bgIndex: Math.round(Math.random()*bgImages.length)
+      })
+    }, 1000)
   }
 
   render() {
@@ -56,7 +62,7 @@ export default class Team1 extends Component {
 
 
     return (
-      <div className='container' style={{background: `url(${bgImages[0]})`, backgroundSize: 'cover', fontSize: '600%'}}>
+      <div className='container' style={{background: `url(${bgImages[this.state.bgIndex]})`, backgroundSize: 'cover', fontSize: '600%'}}>
         <p className='p1' style={{ color: `${this.state.color1}`}}>{paragraph1}</p>
         <p className='p2' style={{ color: `${this.state.color2}`}}>{paragraph2}</p>
       </div>
