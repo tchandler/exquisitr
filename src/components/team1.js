@@ -25,11 +25,13 @@ export default class Team1 extends Component {
         <nav>
           <a>{ this.props.companyName }</a>
           <a><img src={ this.props.logoUrl } style={{ width: 200 }}/></a>
-          {
-            this.props.menuItems.map(
-              title => <a key={title}>{ title }</a>
-            )
-          }
+          <ul>
+            {
+              this.props.menuItems.map(
+                title => <li><a key={title}>{ title }</a></li>
+              )
+            }
+          </ul>
         </nav>
         <marquee>{this.props.headline}</marquee>
         <marquee><pre>{this.props.subhead}</pre></marquee>
