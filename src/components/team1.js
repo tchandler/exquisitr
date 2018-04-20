@@ -28,7 +28,7 @@ export default class Team1 extends Component {
           <ul>
             {
               this.props.menuItems.map(
-                title => <li><a key={title}>{ title }</a></li>
+                title => <li style={{ paddingBottom: 5 }}><button style={{ fontSize: 24, width: 200 }} key={title}>{ Math.random() > 0.5 ? this.props.primaryButtonText : this.props.secondaryButtonText }</button></li>
               )
             }
           </ul>
