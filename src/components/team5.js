@@ -23,15 +23,15 @@ export default class Team1 extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      color1: Color('#f00'),
-      color2: Color('#00f')
+      color1: Color('red'),
+      color2: Color('blue')
     }
   }
 
   componentDidMount () {
-    this.colorTimer = setInterval(() => {
+    this.colorTimer = window.setInterval(() => {
       this.setState({
-        color1: this.state.color1.shiftHue(1),
+        color1: this.state.color1.shiftHue(-1),
         color2: this.state.color1.shiftHue(1)
       })
     }, 60)
@@ -46,11 +46,9 @@ export default class Team1 extends Component {
 
 
     return (
-      <div className='container' style={{
-        background: linear-gradient(to bottom left, this.state.color1, this.state.color2)
-      }}>
-        <p className='p1'>{paragraph1}</p>
-        <p className='p2'>{paragraph2}</p>
+      <div className='container'>
+        <p className='p1' style={{ color: `${this.state.color1}`}}>{paragraph1}</p>
+        <p className='p2' style={{ color: `${this.state.color2}`}}>{paragraph2}</p>
       </div>
     )
   }
