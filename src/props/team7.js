@@ -1,9 +1,11 @@
+// Describe and find headshots for as many employees of company as you see fit
 
 export default {
-    title: '',
-    headline: '',
-    subhead: '',
-    primaryButtonText: '',
-    secondaryButtonText: '',
-    heroImageUrls: ['', ''] // because of course carousel
+    teamMembers: [
+        {
+            name: 'Employee 1',
+            title: 'Engineer',
+            image: ''
+        }
+    ]
 }

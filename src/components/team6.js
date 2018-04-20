@@ -1,20 +1,24 @@
+// Style some C-level employee layouts. Account for randomly sized images.
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class Team6 extends Component {
+export default class Team5 extends Component {
   static propTypes = {
-    teamMembers: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        image: PropTypes.string.isRequired
-      })
-    )
+    CEOName: PropTypes.string.isRequired,
+    CEOBio: PropTypes.string.isRequired,
+    CEOImgUrl: PropTypes.string.isRequired,
+    CTOName: PropTypes.string.isRequired,
+    CTOBio: PropTypes.string.isRequired,
+    CTOImgUrl: PropTypes.string.isRequired,
+    COOName: PropTypes.string.isRequired,
+    COOBio: PropTypes.string.isRequired,
+    COOImgUrl: PropTypes.string.isRequired
   }
 
   render() {
     return (<div>
-      {this.props.teamMembers[0].name}
+      {this.props.CEOName}
     </div>)
   }
 }

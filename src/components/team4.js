@@ -1,3 +1,5 @@
+// Layout a call to action for a service the company provides
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 

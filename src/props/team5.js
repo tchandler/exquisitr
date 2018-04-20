@@ -1,12 +1,14 @@
+// Madlibs!
 
 export default {
-    CEOName: '',
-    CEOBio: '',
-    CEOImgUrl: '',
-    CTOName: '',
-    CTOBio: '',
-    CTOImgUrl: '',
-    COOName: '',
-    COOBio: '',
-    COOImgUrl: ''
+  companyName: '', // See team 1 for company name
+  targetAudience: '',
+  verb: '', // goal related
+  nameOfConsumableProduct: '',
+  pretentiousDescriptionOfProduct: '',
+  anotherWayToDescribeProduct: '',
+  adjective: '',
+  descriptiveNounClause: '',
+  lifeGoal: '',
+  adjectiveDescribingGreatness: '',
 }
