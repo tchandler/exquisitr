@@ -19,7 +19,7 @@ import team7Props from '../props/team7'
 import team8Props from '../props/team8'
 
 const DEV = true
-const MY_TEAM = 1
+const MY_TEAM = 3
 
 const componentsMap = {
   Team1, Team2, Team3, Team4, Team5,
