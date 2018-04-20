@@ -26,14 +26,6 @@ class App extends Component {
         <article className='mission'>
             <Team id={ 5 } />
         </article>
-        <article className='team'>
-          <section>
-            <Team id={ 6 } />
-          </section>
-          <section>
-            <Team id={ 7 } />
-          </section>
-        </article>
 
         <footer>
           <Team id={ 8 } />
