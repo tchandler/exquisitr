@@ -47,7 +47,7 @@ export default class Team1 extends Component {
 
     return (
       <div className='container' style={{
-        background: linear-gradient(to bottom left, this.state.color1, this.state.color2);
+        background: linear-gradient(to bottom left, this.state.color1, this.state.color2)
       }}>
         <p className='p1'>{paragraph1}</p>
         <p className='p2'>{paragraph2}</p>
