@@ -6,6 +6,16 @@ import Color from 'color-js'
 
 import './team5.css'
 
+const bgImages = [
+  process.env.PUBLIC_URL + '/team5/bg1.png',
+  process.env.PUBLIC_URL + '/team5/bg2.png',
+  process.env.PUBLIC_URL + '/team5/bg3.png',
+  process.env.PUBLIC_URL + '/team5/bg4.png',
+  process.env.PUBLIC_URL + '/team5/bg5.png',
+  process.env.PUBLIC_URL + '/team5/bg6.png',
+  process.env.PUBLIC_URL + '/team5/bg7.png',
+]
+
 export default class Team1 extends Component {
   static propTypes = {
     companyName: PropTypes.string.isRequired,
@@ -46,7 +56,7 @@ export default class Team1 extends Component {
 
 
     return (
-      <div className='container'>
+      <div className='container' style={{background: `url(${bgImages[0]})`, backgroundSize: 'cover', fontSize: '600%'}}>
         <p className='p1' style={{ color: `${this.state.color1}`}}>{paragraph1}</p>
         <p className='p2' style={{ color: `${this.state.color2}`}}>{paragraph2}</p>
       </div>
