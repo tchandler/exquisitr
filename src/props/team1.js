@@ -8,7 +8,20 @@ const fishes = [
   'Salmon',
   'Swordfish',
   'Scaly Dragonfish',
-  'Catfish'
+  'Catfish',
+  'Temperate perch',
+  'Thorny catfish',
+  'Stonefish',
+  'Seahorse',
+  'Smelt',
+  'Spiny eel',
+  'Manta ray',
+  'Rainbowfish',
+  'Roosterfish',
+  'Lionfish',
+  'Noodlefish',
+  'Minnow of the deep',
+  'Warmouth'
 ]
 const fish = fishes[Math.floor(Math.random() * fishes.length)]
 
